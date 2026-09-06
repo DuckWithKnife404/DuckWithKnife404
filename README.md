@@ -1,42 +1,48 @@
-<h1 align="center">
-  <pre>
-  __
- (..)   DuckWithKnife404
- (  )   ═══════════════════
- (_  )  Junior Developer
-   ||   Python • C++
-  </pre>
-</h1>
+<h1 align="center">🐤 DuckWithKnife404</h1>
+<p align="center">
+  <i>«Программист — это машина для превращения кофе в код»</i>
+</p>
 
 ###
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py,cpp" height="50" alt="langs" />
+  <img src="https://skillicons.dev/icons?i=py,cpp,vscode,pycharm" height="45" alt="stack" />
 </div>
 
 ###
 
 <div align="center">
-  <h3>🎯 Цель на 2026</h3>
-  <p>Написать свой первый пет-проект, который не стыдно показать</p>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+  </a>
 </div>
 
 ###
 
 <div align="center">
-  <h3>📫 Как найти</h3>
-  <p>
-    <a href="https://t.me/duckwithknife">
-      <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
-    </a>
-    <a href="mailto:duckwithknife404@gmail.com">
-      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-    </a>
-  </p>
+  <h4>🔥 Сейчас изучаю</h4>
+  <ul style="list-style:none; padding:0;">
+    <li>• ООП в Python</li>
+    <li>• STL в C++</li>
+    <li>• Git и GitHub</li>
+  </ul>
 </div>
 
 ###
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d2ff,100:3a7bd5&height=100&section=footer" />
+  <h4>📊 Быстрая статистика</h4>
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=DuckWithKnife404&show_icons=true&theme=github_dark&hide_border=true&hide=prs,issues,contribs&custom_title=Коммитов%20за%20все%20время" height="140" />
+</div>
+
+###
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00d2ff,100:3a7bd5&height=3" />
 </div>
