@@ -1,43 +1,42 @@
-<h1 align="center">🦆 DuckWithKnife404</h1>
-<p align="center">
-  <i>🔪 Coder | 🐍 Python | ⚡ C++</i>
-</p>
+<h1 align="center">
+  <pre>
+  __
+ (..)   DuckWithKnife404
+ (  )   ═══════════════════
+ (_  )  Junior Developer
+   ||   Python • C++
+  </pre>
+</h1>
 
 ###
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py,cpp,vscode,visualstudio,pycharm" height="40" alt="skills" />
+  <img src="https://skillicons.dev/icons?i=py,cpp" height="50" alt="langs" />
 </div>
 
 ###
 
 <div align="center">
-  <h3>📌 Сейчас в разработке</h3>
-  <table>
-    <tr>
-      <td>🚀 <b>Project 1</b></td>
-      <td>Telegram bot на Python (в процессе)</td>
-    </tr>
-    <tr>
-      <td>⚔️ <b>Project 2</b></td>
-      <td>Консольная игра на C++ (почти готово)</td>
-    </tr>
-    <tr>
-      <td>📚 <b>Project 3</b></td>
-      <td>Парсер сайтов (изучаю BeautifulSoup)</td>
-    </tr>
-  </table>
+  <h3>🎯 Цель на 2026</h3>
+  <p>Написать свой первый пет-проект, который не стыдно показать</p>
 </div>
 
 ###
 
 <div align="center">
-  <h3>📈 Мой путь</h3>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=DuckWithKnife404&theme=dark&hide_border=true&background=0D1117" alt="Streak Stats" />
+  <h3>📫 Как найти</h3>
+  <p>
+    <a href="https://t.me/duckwithknife">
+      <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+    </a>
+    <a href="mailto:duckwithknife404@gmail.com">
+      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    </a>
+  </p>
 </div>
 
 ###
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=DuckWithKnife404&label=👀+Просмотров&color=blue&style=for-the-badge" alt="views" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d2ff,100:3a7bd5&height=100&section=footer" />
 </div>
