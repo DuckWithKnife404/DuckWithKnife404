@@ -11,7 +11,7 @@
 
 ---
 
-### 🤖 Обо мне
+### 🤍 Обо мне
 - <img src="https://unpkg.com/lucide-static@latest/icons/user.svg" width="18" height="18" style="filter: invert(1); vertical-align: middle; margin-right: 6px;"> **Роль:** Будущий Data Scientist специалист
 - <img src="https://unpkg.com/lucide-static@latest/icons/briefcase.svg" width="18" height="18" style="filter: invert(1); vertical-align: middle; margin-right: 6px;"> **Сейчас изучаю:** Docker (и как не уронить прод)
 - <img src="https://unpkg.com/lucide-static@latest/icons/message-circle.svg" width="18" height="18" style="filter: invert(1); vertical-align: middle; margin-right: 6px;"> **Спроси меня о:** Как написать системный промт ИИ — а я хз )
@@ -40,7 +40,7 @@
 
 ---
 
-### 📫 Как со мной связаться
+### 🤍 Как со мной связаться
 <p align="center">
   <a href="mailto:me@georgiy.xyz">
     <img src="https://img.shields.io/badge/Email-me@georgiy.xyz-1a1a1a?style=for-the-badge&logo=gmail&logoColor=white"/>
