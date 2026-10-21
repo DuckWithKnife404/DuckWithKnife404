@@ -1,0 +1,104 @@
+name: Snaky
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Генерация змейки
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: DuckWithKnife404
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Копируем файлы и добавляем фиолетовый неон
+      - name: Add neon glow
+        run: |
+          cp dist/github-contribution-grid-snake.svg ./snake.svg
+          cp dist/github-contribution-grid-snake-dark.svg ./snake-dark.svg
+          
+          python3 << 'EOF'
+          import os
+          
+          def add_neon(file_in, file_out, color):
+              with open(file_in, 'r') as f:
+                  content = f.read()
+              
+              # Создаем неоновый фильтр с указанным цветом
+              neon_filter = f'''
+          <defs>
+            <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+              <!-- Основное свечение -->
+              <feGaussianBlur stdDeviation="6" result="blur1"/>
+              <feGaussianBlur stdDeviation="3" result="blur2"/>
+              <feGaussianBlur stdDeviation="1.5" result="blur3"/>
+              
+              <!-- Затемняем фон для контраста -->
+              <feComponentTransfer in="blur1" result="darken">
+                <feFuncA type="linear" slope="0.8"/>
+              </feComponentTransfer>
+              
+              <!-- Накладываем свечение -->
+              <feMerge>
+                <feMergeNode in="blur1"/>
+                <feMergeNode in="blur2"/>
+                <feMergeNode in="blur3"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            
+            <!-- Стили для изменения цвета змейки -->
+            <style>
+              .snake-path {{
+                stroke: {color} !important;
+                fill: {color} !important;
+              }}
+            </style>
+          </defs>
+          '''
+              
+              # Добавляем фильтр и меняем цвет
+              content = content.replace('<svg', '<svg filter="url(#neon)"')
+              content = content.replace('</svg>', neon_filter + '</svg>')
+              
+              # Меняем цвет всех элементов (для светлой темы)
+              content = content.replace('fill="#4c1"', f'fill="{color}"')
+              content = content.replace('stroke="#4c1"', f'stroke="{color}"')
+              content = content.replace('fill="#2e7d32"', f'fill="{color}"')
+              content = content.replace('stroke="#2e7d32"', f'stroke="{color}"')
+              
+              # Для темной темы
+              content = content.replace('fill="#39d353"', f'fill="{color}"')
+              content = content.replace('stroke="#39d353"', f'stroke="{color}"')
+              
+              with open(file_out, 'w') as f:
+                  f.write(content)
+              
+              print(f"✅ Neon added to {file_out} with color {color}")
+          
+          # Применяем фиолетовый цвет
+          add_neon('snake.svg', 'snake.svg', '#9526fa')
+          add_neon('snake-dark.svg', 'snake-dark.svg', '#9526fa')
+          EOF
+          
+          sudo cp snake.svg dist/github-contribution-grid-snake.svg
+          sudo cp snake-dark.svg dist/github-contribution-grid-snake-dark.svg
+
+      # Публикация
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output
+          force_orphan: true
